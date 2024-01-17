@@ -1,0 +1,68 @@
+html {
+    background-color: rgb(242, 248, 242);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+    background-color: rgba(39, 106, 57, 0.532);
+    height: 60px;
+    font-size: 30px;
+    border-bottom: 2px solid rgb(75, 174, 75);
+    text-decoration: underline;
+
+}
+
+.menuButtonWrapper{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuButton{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px green
+    
+}
+.menuButton:hover{
+    background-color: rgb(181, 230, 181);
+    color: rgb(44, 34, 34);
+    cursor: pointer;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 0 30px ;
+    height: 90vh;
+
+}
+.subHeader{
+}
+
+.mainContentPara{
+    max-width: 800px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
