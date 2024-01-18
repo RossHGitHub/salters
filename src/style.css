@@ -13,25 +13,53 @@ body{
 
 .header{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 5px;
-    background-color: rgba(39, 106, 57, 0.532);
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(255, 255, 58), green);
     height: 60px;
     font-size: 30px;
-    border-bottom: 6px solid rgb(75, 174, 75);
+    border-bottom: 16px solid rgb(56, 15, 15);
+    width: 100vw;
 
+}
+
+.subHeaderWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+}
+
+.subHeader{
+
+    background-color: rgb(38, 92, 43);
+    color: white;
+    padding: 20px;
 }
 
 .menuButtonWrapper{
-    margin-top: 10px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
+    height: 90vh;
+    background-image: url(./img/grass.jpg);
 }
 
 .menuButton{
-    background-color: white;
+    background-color: rgb(24, 96, 17);
+    height: 100px;
+    width: 100px;
+    flex: 1 0 auto;
+    margin: 30px;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px rgb(5, 76, 5);
+    color: white;
+
     
 }
 .menuButton:hover{
@@ -49,8 +77,6 @@ body{
     height: 90vh;
 
 }
-.subHeader{
-}
 
 .mainContentPara{
     max-width: 800px;
@@ -62,5 +88,29 @@ a {
 
 a:visited{
     text-decoration: none;
+    color: white;
+}
+
+.homeHeader{
+ color: black;
+}
+
+.homeHeader:visited{
     color: black;
+}
+
+.calculatorsMainContent{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.calculation{
+    margin: 20px;
+}
+.calcInput{
+    width: 40px;
 }

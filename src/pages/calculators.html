@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turf Management Calculators</title>
+</head>
+<body>
+    <script src="../../dist/main.js"></script>
+    <script src="../javascriptFiles/calculations.js" defer></script>
+    <header class="header">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-seeding" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+        <path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+        <path d="M12 20l0 -10" />
+      </svg><a class="homeHeader" href="../../dist/index.html">TGS Turf Manager</a></header>
+      
+
+      <div class="calculatorsMainContent" id="calcMainContent"> 
+        <h2>Turf Management Calculators</h2>
+        <p>This Calculator is to determine how much Nitrogen (N) you would like to apply per hectare (h/a) in KG.</p>
+
+        <div class="calculation" id="calculation">
+            <div>
+            Total N = <input type="number" class="calcInput" id="calculationInputOne" placeholder="0.0">(kg) per h/a</div>
+            <div>% of N <input type="number" id="calculationInputTwo" class="calcInput" placeholder="0.00"></div>
+          </div>
+          <button id="calculateButton">Calculate</button>
+      </div>
+
+     
+
+</body>
+</html>
