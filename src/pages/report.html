@@ -7,18 +7,45 @@
 </head>
 <body>
     <script src="../../dist/main.js"></script>
-    <header class="header">Salters</header>
+    <header class="header"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-seeding" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+        <path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+        <path d="M12 20l0 -10" />
+      </svg>Salters</header>
     <div class="menuButtonWrapper">
         <button class="menuButton"><a href="../../dist/index.html">Home</a></button>
-        <button class="menuButton"><a href="./report.html">New Report</a></button>
-        <button class="menuButton">Placeholder</button>
-        <button class="menuButton">Placeholder</button>
+        <button class="menuButton"><a href="./report.html">Data Submission</a></button>
+        <button class="menuButton">Turf Management Calculators</button>
+        <button class="menuButton">Planning Tools</button>
+        <button class="menuButton">Calender</button>
+        <button class="menuButton">Weather Charts</button>
     </div>
 
-    <div class="mainContent">
+    <div class="mainContent" id="'mainContent">
         <h2>New Report</h2>
-        <p>To start generating a new report, click begin below:</p>
-        <button>Begin</button>
+        <p>To start generating a new report, select which type of report you'd like to make from the dropdown list, and click begin below:</p>
+        <div class="reportSelectionWrap">
+            <select name="reportSelection" id="reportSelection">
+                <option value="Please Select">Please Select</option>
+                <optgroup label="Greens">
+                    <option value="greenWater">Water</option>
+                    <option value="greenFeed">Fertilizer
+                    </option>
+                </optgroup>
+                <optgroup label="Mowers">
+                    <option value="Mower One">Mower One: Model XX67</option>
+                    <option value="Mower Two">Mower Two</option>
+                </optgroup>
+
+                <optgroup label="Tractors">
+                    <option value="Tractor One">Tractor One</option>
+                    <option value="TractorTwo">Tractor Two</option>
+                </optgroup>
+              
+            </select>
+            <button id="startButton">Begin</button>
+        </div>
 
     </div>
 </body>
